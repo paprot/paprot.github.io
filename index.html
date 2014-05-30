@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="pl,en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="pl,en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="pl,en"> <!--<![endif]-->
+
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Paprocki</title>
+<meta name="description" content=" OPIS ">
+<meta name="author" content="Adam Paprocki">
+<meta name="robots" content="NoIndex, NoFollow">
+<link href='http://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<style type="text/css">
+</style></head>
+<body>
+<header class="main_h">
+  <div class="row"> <a class="logo" href="#">Adam Paprocki</a>
+    <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+    <nav>
+      <ul>
+        <li><a href=".sec01">Tabelki</a></li>
+        <li><a href=".sec02">Mapa</a></li>
+        <li><a href=".sec03">Prezentacja</a></li>
+        <li><a href=".container">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- / row --> 
+  
+</header>
+<div class="hero">
+  <h1><span>Techniki Komputerowe 2014</span><br>
+    Strona WWW</h1>
+  <div class="mouse" title="Scroll Down / Przesuń w dół"> <span></span> </div>
+</div>
+<div class="row content">
+  <h1 class="about">O mnie</h1>
+ <p> Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki Adam Paprocki</p>
+   <h1 class="sec01">Tabelki</h1>
+    <div style="float:right" ><span style="text-align: center;"><a class="fancybox" data-fancybox-type="iframe" href="tabelki.html"><img src="img/tabela.png" width="335" height="496" alt="Widok Tabelek" title="Widok Tabelek"></a></span></div>
+   <p>Zadanie polegało na ..... Wykonaniu <a class="fancybox" data-fancybox-type="iframe" href="tabelki.html">Tabelki</a>
+  </p>  
+         
+  <h1 class="sec02"  style="clear:both;">Mapa</h1>
+  <p>
+  <div id="map"></div>
+  </p>
+  
+  <h1 class="sec03">Prezentacja</h1>
+ 
+ <iframe src="//slides.com/paprot138/jak-powstala-moja-strona-na-github/embed?style=light" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  <h1 class="sec04">Kontakt</h1>
+  <p><strong>Adam Paprocki</strong><br>
+  Informatyka zaoczna  - rok II -  semestr 4 - Techniki internetowe prowadzący: W.Bzyl  </p>
+  <p>Nr. indeku: <span class="copy"><strong>181746</strong></span><br>
+    <br>
+  </p>
+  <p>
+  
+</div>
+<!-- footer --> 
+<footer id="footer">
+  <div class="container">
+    <p class="copy">Copyright 2014 Adam Paprocki 181746</p>
+    <ul>
+     <li class="github"><a href="http://github.com/paprot" title="Adam Paprocki na GitHub"></a></li>
+      <!--  <li class="twitter"><a href="#"></a></li>-->
+      <li class="facebook"><a href="http://www.facebook.com/DAAAM" title="Adam Paprocki na Facebook"></a></li>
+      <!--    <li class="pinterest"><a href="#"></a></li> -->
+      <li class="google-plus"><a href="http://plus.google.com/ADAM?rel=author" title="Adam Paprocki na GooglePlus"></a></li>
+      <!--    <li class="ball"><a href="#"></a></li>-->
+      <li class="linked-in"><a href="http://pl.linkedin.com/in/ADAM/" title="Adam Paprocki na LinkedIn"></a></li>
+    </ul>
+  </div>
+  <!-- / container --> 
+</footer>
+<!-- / footer --> 
+<script type="text/javascript" src="js/view.js"></script> 
+<script>
+window.onload = function () {    
+   	var map = L.map('map').setView([54.467015, 18.486588], 15);
+   	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+ 	var marker = L.marker([54.467015, 18.486588]).addTo(map);
+ 	marker.bindPopup("<b>Gdynia FIKAKOWO</b><br>Tu mieszkam :)").openPopup();
+}
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+</body>
+</html>

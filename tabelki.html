@@ -1,0 +1,862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Techniki internetowe</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+
+<style>
+table.kurczaki thead td{
+	font-style: italic;
+	font-weight:normal;
+	color: black;
+}
+
+
+table.kurczaki td{
+	text-align:center;
+	width: auto;
+	border: none;
+} 
+
+table.kurczaki td:first-child{
+	text-align:right;
+}
+
+table.kurczaki tbody td:first-child{
+	font-weight:bold;
+}
+
+table.kurczaki tbody td:nth-child(2){
+	font-style: italic;
+}
+table.kurczaki td:last-child{
+	text-align:left;
+}  
+
+
+table.kurczaki#kurczaki-2 thead td{
+	background: lightblue;
+}
+
+
+table.kurczaki#kurczaki-2 td{
+	background: lightgreen;
+} 
+
+table.kurczaki#kurczaki-2 tr:nth-child(even) td{
+	background: lightyellow;
+}
+
+table.XVIw td{
+	color: black;
+	border: none;
+	vertical-align: top;
+	width: auto;
+	font-weight: normal;
+	text-align: left;
+	padding: 2px 5px;
+}
+
+table.XVIw td:nth-child(3), table.XVIw td:nth-child(6){
+	text-align: right;
+}
+
+table.XVIw td:first-child, table.XVIw td:nth-child(4){
+	font-style: italic;
+}
+
+table.XVIw#XVIw-2 tr:nth-child(even) td:nth-child(even), table.XVIw#XVIw-2 tr:nth-child(odd) td:nth-child(odd){
+	background: #BF1575;
+	color: white;
+}
+
+table.Populacja td{
+	width:auto;
+	color:black;
+	padding:2px 8px;
+	border:none;
+}
+
+table.Populacja thead td{
+	font-style: italic;
+	font-weight: normal;
+	border:1px solid black;
+	
+}
+table.Populacja tfoot td{
+	text-align: right;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	
+}
+table.Populacja tbody td{
+	text-align:right;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+
+table.Populacja#Populacja-2 td{
+	border-color: green;
+	background:#E09B1B;
+}
+
+table.Populacja#Populacja-2 tbody td{
+	border-color: green;
+	background: #CCCAE3;
+}
+
+table.Worksheet td{
+	width:auto;
+	color:black;
+	padding:2px 8px;
+	border:none;
+}
+
+table.Worksheet td:first-child{
+	vertical-align: top;
+	text-align: right;
+}
+
+table.Worksheet td:nth-child(2), table.Worksheet td:nth-child(3){
+	text-align: left;
+}
+table.Worksheet td:last-child{
+	text-align: right;
+}
+
+table.Worksheet tr:nth-child(4) td:nth-child(4), table.Worksheet tr:nth-child(3) td:nth-child(3) {
+	text-decoration: underline;
+}
+
+table.Worksheet#Worksheet-2{
+	background: yellow;
+}
+
+table.ATandT {
+	display: inline-table;
+}
+
+table.ATandT td{
+	width:auto;
+	color:black;
+	padding:2px 8px;
+	border:1px solid black;
+	text-align: center;
+}
+
+table.ATandT thead td{
+	text-align: center;
+	font-weight: normal;
+}
+table.ATandT tfoot td{
+	text-align: left;
+	font-weight: normal;
+}
+
+table.ATandT tbody td:first-child{
+	text-align: right;
+}
+
+table.ATandT tbody tr:last-child td:last-child {
+	text-align:right;
+}
+
+
+table.ATandT.color{
+	background: green;
+}
+table.ATandT.wide{
+	width:300px;
+}
+.center{
+	text-align:center;
+}
+
+table.Chart  td{
+	width:auto;
+	color:black;
+	padding:2px 8px;
+	border:none;
+}
+
+table.Chart tr:nth-child(2n-1) td:nth-child(3){
+	border-bottom:1px solid black;
+}
+
+table.Chart tr:nth-child(4n+2) td:nth-child(3), table.Chart tr:nth-child(4n+3) td:nth-child(3){
+	border-left:1px solid black;	
+}
+
+
+table.Chart tr:nth-child(4n-2) td:nth-child(2){
+	border-bottom:1px solid black;
+}
+table.Chart tr:nth-child(8n-5) td:nth-child(2), table.Chart tr:nth-child(8n-4) td:nth-child(2), table.Chart tr:nth-child(8n-3) td:nth-child(2), table.Chart tr:nth-child(8n-2) td:nth-child(2){
+	border-left:1px solid black;	
+}
+
+table.Chart tr:nth-child(8n-4) td:nth-child(1){
+	border-bottom:1px solid black;
+}
+
+table.Chart#Chart-2 td{
+	background: #15ABBF;
+	border-color: white;
+	color: #071266;
+}
+
+</style>
+</head>
+  
+  <body>
+  
+ 
+
+
+<center>
+<table class="kurczaki">
+        		<caption>Kurczaki czarno-biale</caption>	
+        		<thead>
+        			<tr>
+        				<td>American<br>Chicken
+        				<td>French<br>Connection
+        				<td>Age<br>(months)
+        				<td>Weight<br>(lbs.)
+        				<td>Cooking<br>Methods			
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>Squab
+        				<td>Poussin
+        				<td>2
+        				<td>&frac34; to 1
+        				<td>Boil, Grill, Roast
+        			</tr>
+        			<tr>
+        				<td>Boiler
+        				<td>Poulet Nouveau
+        				<td>2 to 3
+        				<td>1&frac12; to 2&frac12;
+        				<td>Boil, Grill, Roast	
+        			</tr>
+        			<tr>
+        				<td>Fryer
+        				<td>Poulet Reine
+        				<td>3 to 5
+        				<td>2 to 3
+        				<td>Fry, Saute, Roast	
+        			</tr>
+        			<tr>
+        				<td>Roaster
+        				<td>Poularde
+        				<td>5&frac12; to 9
+        				<td>Over 3
+        				<td>Roast, Poach, Fricassee	
+        			</tr>
+        			<tr>
+        				<td>Fowl
+        				<td>Poule de l'Annee
+        				<td>10 to 12
+        				<td>Over 3
+        				<td>Stew, Fricassee	
+        			</tr>
+        			<tr>
+        				<td>Rooster
+        				<td>Coq
+        				<td>Over 12
+        				<td>Over 3
+        				<td>Soup stock, Forcemeat	
+        			</tr>													
+        		</tbody>		
+        	</table>
+        	<br><br><br>
+        	<table class="kurczaki" id='kurczaki-2'>
+        		<caption>Kurczaki kolorowe</caption>	
+        		<thead>
+        			<tr>
+        				<td>American<br>Chicken
+        				<td>French<br>Connection
+        				<td>Age<br>(months)
+        				<td>Weight<br>(lbs.)
+        				<td>Cooking<br>Methods			
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>Squab
+        				<td>Poussin
+        				<td>2
+        				<td>&frac34; to 1
+        				<td>Boil, Grill, Roast
+        			</tr>
+        			<tr>
+        				<td>Boiler
+        				<td>Poulet Nouveau
+        				<td>2 to 3
+        				<td>1&frac12; to 2&frac12;
+        				<td>Boil, Grill, Roast	
+        			</tr>
+        			<tr>
+        				<td>Fryer
+        				<td>Poulet Reine
+        				<td>3 to 5
+        				<td>2 to 3
+        				<td>Fry, Saute, Roast	
+        			</tr>
+        			<tr>
+        				<td>Roaster
+        				<td>Poularde
+        				<td>5&frac12; to 9
+        				<td>Over 3
+        				<td>Roast, Poach, Fricassee	
+        			</tr>
+        			<tr>
+        				<td>Fowl
+        				<td>Poule de l'Annee
+        				<td>10 to 12
+        				<td>Over 3
+        				<td>Stew, Fricassee	
+        			</tr>
+        			<tr>
+        				<td>Rooster
+        				<td>Coq
+        				<td>Over 12
+        				<td>Over 3
+        				<td>Soup stock, Forcemeat	
+        			</tr>
+        			        			
+        		</tbody>		
+        	</table>	
+			<br><br><br>
+        	<table class="XVIw">										
+        	<caption>XVI w. czarno-biale</caption>	
+           			<tr>
+        				<td>England
+        				<td>P. Philips
+        				<td>1560-1628
+        				<td>Netherlands
+        				<td>J.P. Sweelnick
+        				<td>1562-1621	
+        			</tr>
+        			<tr>
+        				<td>
+        				<td>J. Bull
+        				<td>c1563-1628
+        				<td>
+        				<td>P. Cornet
+        				<td>c1570-1633	
+        			</tr>
+        			<tr>
+        				<td>Germany
+        				<td>H. L. Hassler
+        				<td>1562-1612
+        				<td>Italy
+        				<td>G. Frescobaldi
+        				<td>1583-1643	
+        			</tr>
+        			<tr>
+        				<td>
+        				<td>M. Praetorius
+        				<td>1571-1621
+        				<td>Spain
+        				<td>F. Correa de Arauxo
+        				<td>c1576-1654	
+        			</tr>
+        			<tr>
+        				<td>France
+        				<td>J. Titelouze
+        				<td>1563-1633
+        				<td>Portugal
+        				<td>M. R. Coelho
+        				<td>c1555-c1635	
+        			</tr>
+        		</table>	
+        		<br><br><br>
+        	<table class="XVIw" id="XVIw-2">										
+        	<caption>XVI w. kolorowe</caption>	
+           			<tr>
+        				<td>England
+        				<td>P. Philips
+        				<td>1560-1628
+        				<td>Netherlands
+        				<td>J.P. Sweelnick
+        				<td>1562-1621	
+        			</tr>
+        			<tr>
+        				<td>
+        				<td>J. Bull
+        				<td>c1563-1628
+        				<td>
+        				<td>P. Cornet
+        				<td>c1570-1633	
+        			</tr>
+        			<tr>
+        				<td>Germany
+        				<td>H. L. Hassler
+        				<td>1562-1612
+        				<td>Italy
+        				<td>G. Frescobaldi
+        				<td>1583-1643	
+        			</tr>
+        			<tr>
+        				<td>
+        				<td>M. Praetorius
+        				<td>1571-1621
+        				<td>Spain
+        				<td>F. Correa de Arauxo
+        				<td>c1576-1654	
+        			</tr>
+        			<tr>
+        				<td>France
+        				<td>J. Titelouze
+        				<td>1563-1633
+        				<td>Portugal
+        				<td>M. R. Coelho
+        				<td>c1555-c1635	
+        			</tr>		
+        	</table>
+        	<br><br><br>
+        	<table class="Populacja">
+        		<caption>Populacja czarno-biale</caption>
+        		<thead>
+        		<tr>
+        			<td>Year
+        			<td>World Population
+        		</tr>
+        		</thead>
+        		<tbody>
+        		<tr>
+        			<td>8000 B.C.
+        			<td>5,000,000
+        		</tr>
+        		<tr>
+        			<td>50 A.D.
+        			<td>200,000,000
+        		</tr>
+        		<tr>
+        			<td>1650 A.D.
+        			<td>500,000,000
+        		</tr>				
+        		<tr>
+        			<td>1850 A.D.
+        			<td>1,000,000,000
+        		</tr>
+        		<tr>
+        			<td>1945 A.D.
+        			<td>2,300,000,000
+        		</tr>
+        		</tbody>
+        		<tfoot>				
+        		<tr>
+        			<td>1980 A.D.
+        			<td>4,400,000,000
+        		</tr>
+        		</tfoot>
+        	</table>
+        	<br><br><br>
+           	<table class="Populacja" id="Populacja-2">
+        		<caption>Populacja kolorowe</caption>
+        		<thead>
+        		<tr>
+        			<td>Year
+        			<td>World Population
+        		</tr>
+        		</thead>
+        		<tbody>
+        		<tr>
+        			<td>8000 B.C.
+        			<td>5,000,000
+        		</tr>
+        		<tr>
+        			<td>50 A.D.
+        			<td>200,000,000
+        		</tr>
+        		<tr>
+        			<td>1650 A.D.
+        			<td>500,000,000
+        		</tr>				
+        		<tr>
+        			<td>1850 A.D.
+        			<td>1,000,000,000
+        		</tr>
+        		<tr>
+        			<td>1945 A.D.
+        			<td>2,300,000,000
+        		</tr>				
+        		</tbody>
+        		<tfoot>				
+        		<tr>
+        			<td>1980 A.D.
+        			<td>4,400,000,000
+        		</tr>
+        		</tfoot>
+        	</table>	
+        	<br><br><br>
+        	<table class="Worksheet">
+        		<caption>Worksheet czarno-biale</caption>
+        		<tr>
+        			<td>1
+        			<td>Adjusted gross income .........
+        			<td>...........	
+        			<td>$4000	
+        		</tr>
+        		<tr>
+        			<td>2
+        			<td>Zero bracket amount for<br>a single individual .................
+        			<td>$2,300
+        			<td>		
+        		</tr>
+        		<tr>
+        			<td>3
+        			<td>Earned income ......................	
+        			<td> 1,500
+        			<td>		
+        		</tr>			
+        		<tr>
+        			<td>4
+        			<td>Subtract line 3 from line 2 ....
+        			<td>......
+        			<td> 800		
+        		</tr>
+        		<tr>
+        			<td>5
+        			<td>Add lines 1 and 4. Enter here<br>and on Form 1040, line 35 ....
+        			<td>......
+        			<td>$4,800		
+        		</tr>	
+        	</table>
+        	<br><br><br>    
+        	<table class="Worksheet" id='Worksheet-2'>
+        		<caption>Worksheet kolorowe</caption>
+        		<tr>
+        			<td>1
+        			<td>Adjusted gross income .........
+        			<td>...........	
+        			<td>$4000	
+        		</tr>
+        		<tr>
+        			<td>2
+        			<td>Zero bracket amount for<br>a single individual .................
+        			<td>$2,300
+        			<td>		
+        		</tr>
+        		<tr>
+        			<td>3
+        			<td>Earned income ......................	
+        			<td> 1,500
+        			<td>		
+        		</tr>			
+        		<tr>
+        			<td>4
+        			<td>Subtract line 3 from line 2 ....
+        			<td>......
+        			<td id="1"> 800		
+        		</tr>
+        		<tr>
+        			<td>5
+        			<td>Add lines 1 and 4. Enter here<br>and on Form 1040, line 35 ....
+        			<td>......
+        			<td>$4,800		
+        		</tr>	
+        	</table>
+        	<br><br><br>
+			<div class="center">
+        	<table class="ATandT">
+        		<caption>AT&T czarno-biale</caption>
+        		<thead>
+        		<tr>
+        			<td colspan="3">AT&T Common stock
+        		</tr>
+        		</thead>
+        		<tbody>
+        		<tr>
+        			<td>Year
+        			<td>Price
+        			<td>Dividend		
+        		</tr>
+        		<tr>
+        			<td>1971
+        			<td>41-54
+        			<td>$2.60		
+        		</tr>
+        		<tr>
+        			<td>2
+        			<td>41-54
+        			<td>2.70		
+        		</tr>
+        		<tr>
+        			<td>3
+        			<td>46-55
+        			<td>2.87		
+        		</tr>
+        		<tr>
+        			<td>4
+        			<td>40-53
+        			<td>3.24		
+        		</tr>
+        		<tr>
+        			<td>5
+        			<td>45-52
+        			<td>3.40		
+        		</tr>
+           		<tr>
+        			<td>6
+        			<td>51-59
+        			<td>.95*		
+        		</tr>
+        		</tbody>
+        		<tfoot>
+        		<tr>
+        			<td colspan="3">* (first quarter only)
+        		</tr>
+        		</tfoot>
+				</table>
+           	<table class="ATandT wide">
+        		<caption>AT&T czarno-biale</caption>
+        		<thead>
+        		<tr>
+        			<td colspan="3">AT&T Common stock
+        		</tr>
+        		</thead>
+        		<tbody>
+        		<tr>
+        			<td>Year
+        			<td>Price
+        			<td>Dividend		
+        		</tr>
+        		<tr>
+        			<td>1971
+        			<td>41-54
+        			<td>$2.60		
+        		</tr>
+        		<tr>
+        			<td>2
+        			<td>41-54
+        			<td>2.70		
+        		</tr>
+        		<tr>
+        			<td>3
+        				
+        			<td>46-55
+        			<td>2.87		
+        		</tr>
+        		<tr>
+        			<td>4
+        			<td>40-53
+        			<td>3.24		
+        		</tr>
+        		<tr>
+        			<td>5
+        			<td>45-52
+        			<td>3.40		
+        		</tr>
+           		<tr>
+        			<td>6
+        			<td>51-59
+        			<td>.95*		
+        		</tr>
+        		</tbody>
+        		<tfoot>
+        		<tr>
+        			<td colspan="3">* (first quarter only)
+        		</tr>
+        		</tfoot>
+        		</table>
+        	<br><br><br>     		
+        		
+        		<table class="ATandT color">
+        		<caption>AT&T kolorowe</caption>
+        		<thead>
+        		<tr>
+        			<td colspan="3">AT&T Common stock
+        		</tr>
+        		</thead>
+        		<tbody>
+        		<tr>
+        			<td>Year
+        			<td>Price
+        			<td>Dividend		
+        		</tr>
+        		<tr>
+        			<td>1971
+        			<td>41-54
+        			<td>$2.60		
+        		</tr>
+        		<tr>
+        			<td>2
+        			<td>41-54
+        			<td>2.70		
+        		</tr>
+        		<tr>
+        			<td>3
+        			<td>46-55
+        			<td>2.87		
+        		</tr>
+        		<tr>
+        			<td>4
+        			<td>40-53
+        			<td>3.24		
+        		</tr>
+        		<tr>
+        			<td>5
+        			<td>45-52
+        			<td>3.40		
+        		</tr>
+           		<tr>
+        			<td>6
+        			<td>51-59
+        			<td>.95*		
+        		</tr>
+        		</tbody>
+        		<tfoot>
+        		<tr>
+        			<td colspan="3">* (first quarter only)
+        		</tr>
+        		</tfoot>
+        	</table>
+        	<table class="ATandT wide color">
+        		<caption>AT&T kolorowe</caption>
+        		<thead>
+        		<tr>
+        			<td colspan="3">AT&T Common stock
+        		</tr>
+        		</thead>
+        		<tbody>
+        		<tr>
+        			<td>Year
+        			<td>Price
+        			<td>Dividend		
+        		</tr>
+        		<tr>
+        			<td>1971
+        			<td>41-54
+        			<td>$2.60		
+        		</tr>
+        		<tr>
+        			<td>2
+        			<td>41-54
+        			<td>2.70		
+        		</tr>
+        		<tr>
+        			<td>3
+        			<td>46-55
+        			<td>2.87		
+        		</tr>
+        		<tr>
+        			<td>4
+        			<td>40-53
+        			<td>3.24		
+        		</tr>
+        		<tr>
+        			<td>5
+        			<td>45-52
+        			<td>3.40		
+        		</tr>
+           		<tr>
+        			<td>6
+        			<td>51-59
+        			<td>.95*		
+        		</tr>
+        		</tbody>
+        		<tfoot>
+        		<tr>
+        			<td colspan="3">* (first quarter only)
+        		</tr>
+        		</tfoot>
+        	</table>	
+			</div>
+        	<br><br><br>	        	
+        	
+        	
+			<table class="Chart">										
+        		<caption>Chart czarno-biale</caption>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>J. H. Boehning, 1838
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>J. H. Boehning, 1882
+        			<td>
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>M. D. Blase, 1840
+        		</tr>
+        		<tr>
+        			<td>J. H. Boehning, 1912
+        			<td>
+        			<td>
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>E. F. Ehlert, 1845
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>P. A. M. Ehlert, 1884
+        			<td>
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>C. L. Wischmeyer, 1850
+        		</tr>																													
+        	</table>
+        	<br><br><br>
+        	<table class="Chart" id="Chart-2">										
+        		<caption>Chart kolorowe</caption>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>J. H. Boehning, 1838
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>J. H. Boehning, 1882
+        			<td>
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>M. D. Blase, 1840
+        		</tr>
+        		<tr>
+        			<td>J. H. Boehning, 1912
+        			<td>
+        			<td>
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>E. F. Ehlert, 1845
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>P. A. M. Ehlert, 1884
+        			<td>
+        		</tr>
+        		<tr>
+        			<td>
+        			<td>
+        			<td>C. L. Wischmeyer, 1850
+        		</tr>																													
+        	</table>
+
+
+    </div>
+
+  <br>
+ </center>
+  </body>
+</html>
