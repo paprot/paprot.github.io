@@ -10,15 +10,14 @@ jQuery.fn.loadRepositories = function(username) {
         var repos = data.data; // JSON Parsing
         sortByName(repos);    
      
-        var list = $('<ul class="repo_ul"/>');
+        var list = $('<dl/>');
         target.empty().append(list);
         $(repos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com')) {
-                list.append('<li><div class="repo_name"><a href="'+ (this.homepage?this.homepage:this.html_url) +'" title="' + this.description +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></div>');
-                list.append('<div class="desc">' + this.description +'</div><div style="clear:both;" /></li>');
+                list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
+                list.append('<dd>' + this.description +'</dd>');
             }
-        });
-		     
+        });      
       });
       
     function sortByName(repos) {

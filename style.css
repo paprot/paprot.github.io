@@ -326,3 +326,29 @@ nav ul a {
 .no_float {
 	float:right
 }
+
+/* Repo
+------------------------------------------------------------------------------*/
+
+.repo_name {
+	
+	width:100%;	
+	font-size: 14px;
+	font-weight: bold;
+}
+.desc {
+	padding: 2px 0;
+	margin-bottom:10px;
+	width:100%
+	float: left;
+	font-size: 12px;
+	font-style: italic;
+	
+}
+
+.repo_ul {
+	list-style-type: square;
+
+}
+
+
