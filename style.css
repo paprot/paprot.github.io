@@ -21,6 +21,7 @@ p {
 	margin-bottom: 20px;
 	font-size: 17px;
 	line-height: 2;
+	font-family: 'Exo 2', sans-serif;
 }
 a[href], label[for], select, input[type=checkbox], input[type=radio] {
 	cursor: pointer;
